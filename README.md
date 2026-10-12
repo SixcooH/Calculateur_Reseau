@@ -1,0 +1,1 @@
+Programme permettant d'afficher l'IP, le masque, l'adresse réseau, le broadcast, le nombre d'hôtes et la plage utilisable
