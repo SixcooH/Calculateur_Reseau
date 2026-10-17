@@ -14,3 +14,13 @@ broadcast = reseau.broadcast_address
 nb_hotes = reseau.num_addresses - 2
 premiere_ip = adresse_reseau + 1
 derniere_ip = broadcast - 1
+
+
+print(f"Adresse IP        : {adresse_ip}")
+print(f"Masque            : {masque} (/{cidr})")
+
+try:
+    interface = ipaddress.ip_interface(saisie)
+except ValueError:
+    print("Adresse invalide. Exemple de format correct : 192.168.1.10/24")
+    exit()
