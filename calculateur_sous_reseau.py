@@ -19,6 +19,8 @@ derniere_ip = broadcast - 1
 print(f"Adresse IP        : {adresse_ip}")
 print(f"Masque            : {masque} (/{cidr})")
 
+
+#si on tape bonjour ou un format non valide le programme plante
 try:
     interface = ipaddress.ip_interface(saisie)
 except ValueError:
